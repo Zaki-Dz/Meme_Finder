@@ -5,6 +5,7 @@
 
 body {
 	font-family: Segoe UI;
+	padding-top: 70px;
 }
 
 .dark {
@@ -13,6 +14,10 @@ body {
 
 header {
 	background-color: var(--main-color);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 2;
 }
 
 header .container {
@@ -90,6 +95,12 @@ header .theme {
 		display: none;
 	}
 
+	header .search-box {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
 	header .search-box input {
 		width: 300px;
 	}
@@ -128,7 +139,6 @@ main section .results {
 main section .results .result {
 	border-radius: 10px;
 	overflow: hidden;
-	border: 1px dashed;
 	height: 300px;
 	position: relative;
 }
